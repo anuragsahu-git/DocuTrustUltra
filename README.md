@@ -86,43 +86,43 @@ Unlike traditional chatbots, DocuTrust Ultra generates responses grounded entire
 ```
 Upload PDF
 
-↓
+    ↓
 
 Extract Text
 
-↓
+    ↓
 
 Split into Chunks
 
-↓
+    ↓
 
 Generate Embeddings
 
-↓
+    ↓
 
 Store in ChromaDB
 
-↓
+    ↓
 
 User asks Question
 
-↓
+    ↓
 
 Embedding Generation
 
-↓
+    ↓
 
 Similarity Search
 
-↓
+    ↓
 
 Retrieve Context
 
-↓
+    ↓
 
 Gemini AI
 
-↓
+    ↓
 
 Answer with Sources
 ```
