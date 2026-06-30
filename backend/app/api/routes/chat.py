@@ -1,0 +1,19 @@
+from fastapi import APIRouter
+
+from app.schemas.chat import ChatRequest, ChatResponse
+from app.services.rag_service import ask_question
+
+router = APIRouter()
+
+
+@router.post(
+    "/chat",
+    response_model=ChatResponse
+)
+def chat(request: ChatRequest):
+    result = ask_question(request.question)
+
+    return ChatResponse(
+        answer=result["answer"],
+        sources=result["sources"]
+    )
